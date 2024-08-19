@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body style="background-color: yellowgreen;">
+  <center>
+    <h2 style="color:red;">Personal Details</h2>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" required><br>
+  
+        <h2 style="color: red;">Education Qualification</h2>
+        <label for="degree">Degree:</label>
+        <select id="degree" name="degree">
+            <option value="engineering">-- Select Group --</option>
+            <option value="science">Graduate</option>
+            <option value="arts">Phd</option>
+        </select><br><br>
+        <label for="degree">Engineering:</label>
+        <select id="degree" name="degree">
+            <option value="engineering">-- Select Group --</option>
+            <option value="science">Computer Scinece</option>
+            <option value="arts">ECE</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="chess" name="game" value="game">
+        <label for="male">Playing Chess</label>
+        <input type="checkbox" id="Books" name="game" value="game">
+        <label for="female">Reading Books</label><br><br>
+
+
+       <h2><label for="address" style="color: red;">Address</label></h2>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="file">Attach Resume:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+         <!-- <input type="submit" value="Submit"></input> -->
+         <input type="image" src="/submit.jpeg" border="0" alt="Submit" />
+    </form>
+</center>
+  </body>
+</html>
